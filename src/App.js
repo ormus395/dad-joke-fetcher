@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import JokeContainer from "./components/JokeContainer";
-import Error from "./components/Error";
+// import Error from "./components/Error";
 import Button from "./components/Button";
 // let myHeaders = new Headers();
 // myHeaders.append("Accept", "application/json");
@@ -12,7 +12,7 @@ import Button from "./components/Button";
 function App() {
   const [joke, setJoke] = useState({});
   const [isLoaded, setLoaded] = useState(false);
-  const [error, setError] = useState(false);
+  // const [error, setError] = useState(false);
 
   useEffect(() => {
     if (!isLoaded) {

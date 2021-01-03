@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .content {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .fade-in {
+      animation: fadeIn ease 1s;
+    }
+
+    .fade-out {
+      animation: fadeOut ease 1s;
+      display: none;
+    }
+
+    .loader {
+      background-color: red;
+      height: 150px;
+      width: 100px;
+    }
+
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+        display: none;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  <body>
+    <div class="content">
+      <div class="loader"></div>
+    </div>
+  </body>
+  <script>
+    function loadContent() {
+      setTimeout(() => {
+        let content = document.querySelector(".content");
+        let loader = document.querySelector(".loader");
+        let p = document.createElement("p");
+
+        p.innerHTML = "Loaded content";
+        p.classList.add("fade-in");
+        content.appendChild(p);
+
+        loader.classList.add("fade-out");
+      }, 2000);
+    }
+
+    loadContent();
+  </script>
+</html>

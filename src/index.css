@@ -15,6 +15,7 @@ cite {
 }
 
 img {
+  height: 100%;
   width: 100%;
 }
 
@@ -58,19 +59,17 @@ img {
 }
 
 .joke__content {
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  /* color: white; */
   font-weight: bold;
-  line-height: 1.2;
-  position: absolute;
-  top: -115px;
-  right: 0px;
-  width: 250px;
+  margin-bottom: 1rem;
 }
+
+/* .bbq {
+  height: 200px;
+} */
 
 .loader {
   /* opacity: 1; */
-  transition: opacity 1s linear;
+  /* transition: opacity 1s linear; */
 }
 
 .joke {

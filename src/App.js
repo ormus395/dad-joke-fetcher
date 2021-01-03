@@ -17,7 +17,11 @@ function App() {
   useEffect(() => {
     if (!isLoaded) {
       fetch("https://icanhazdadjoke.com/", {
-        headers: { Accept: "application/json" },
+        headers: {
+          Accept: "application/json",
+          "User-Agent":
+            "My app repository (https://github.com/ormus395/dad-joke-fetcher/tree/main)",
+        },
       })
         .then((response) => response.json())
         .then((jsonResponse) => {

@@ -1,3 +1,7 @@
+html {
+  font-size: 18px;
+}
+
 body {
   height: 100vh;
   background-color: #fbfaf5;
@@ -57,10 +61,11 @@ img {
   /* background-color: rgba(0, 0, 0, 0.5); */
   /* color: white; */
   font-weight: bold;
+  line-height: 1.2;
   position: absolute;
-  top: -100px;
+  top: -115px;
   right: 0px;
-  width: 200px;
+  width: 250px;
 }
 
 .loader {
